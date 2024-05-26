@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        :root {
+            /* --orange: #f5400a;
+    --blue: #0203e2;
+    --pink: #d90166;
+    --lava: #cf1020; */
+            --color: #f5400a;
+        }
+
+        body {
+            background: beige;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+
+        html {
+            font-size: 62.8%;
+        }
+
+        @media screen and (max-width: 1055px) {
+            html {
+                font-size: 55%;
+            }
+        }
+
+        .project {
+            width: 100%;
+            height: 100%;
+            padding: 8rem 0 0 0%;
+            box-sizing: border-box;
+            transition: all 0.5s;
+            /* display: none; */
+
+        }
+
+        @media screen and (max-width: 926px) {
+            .project {
+                padding: 4rem 0rem 4rem 0;
+            }
+
+        }
+
+        .project h2 {
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 3rem;
+            color: var(--color);
+            /* border-bottom: 1.5px solid #f5400a; */
+        }
+
+        .project .project-ul {
+            width: 100%;
+            list-style: none;
+            padding-top: 12rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .project .project-ul li {
+            margin-right: 10px;
+        }
+
+        .project .container {
+            height: 200px;
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+
+        .project .image-container {
+            position: absolute;
+            top: -50px;
+            z-index: 1;
+
+        }
+
+        .project .image-container img {
+            height: 200px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+
+        .project .text {
+            height: 200px;
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            transition: 0.3s;
+        }
+
+        @media screen and (max-width: 760px) {
+            .project .container {
+                height: 260px;
+            }
+
+            .project .text {
+                top: 150px;
+            }
+        }
+
+        .project .text h2 {
+            font-size: 2.5rem;
+        }
+
+        .project .text .portfolio-link {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .project .text .portfolio-link a {
+            text-decoration: none;
+        }
+
+        .project .text .portfolio-link i {
+            height: 40px;
+            width: 80px;
+            background: var(--color);
+            color: white;
+            box-sizing: border-box;
+            font-size: 2rem;
+            padding: 10px;
+            display: grid;
+            place-items: center;
+            border-radius: 40px;
+
+        }
+
+        .project .text .portfolio-link i:hover {
+            background: rgb(218, 212, 212);
+            color: var(--color);
+        }
+
+        .project .container:hover {
+            height: 260px;
+        }
+
+        .project .container:hover .text {
+
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="project" id="project">
+        <h2>CONTROL SYSTEM</h2>
+
+        <ul class="project-ul">
+            <li>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="professor1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>NESO ACADEMY</h2>
+                        <ul class="portfolio-link">
+                            <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRhqzJT87LsdQKYZBC93ezDo&si=RXV0XrjajgbqCGU0" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                            <li><a href="comment.html" target="_blank"><i
+                                class="fa-solid fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="professor2.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>TUTORIALS POINT</h2>
+                        <ul class="portfolio-link">
+                            <li><a href="https://youtube.com/playlist?list=PLWPirh4EWFpGpH_Rb6Q4iQ6vGGRA6MORZ&si=rQQvy-P9XXD0SICn" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                            <li><a href="comment.html" target="_blank"><i
+                                class="fa-solid fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="professor3.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>KREATRYX GATE</h2>
+                        <ul class="portfolio-link">
+                            <li><a href="https://youtube.com/playlist?list=PLs5_Rtf2P2r4r0h0VT5gn36f1_PXjok-c&si=Khwvlt2AEHU3a154" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                            <li><a href="comment.html" target="_blank"><i
+                                class="fa-solid fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+
+            <li>
+                <div class="container">
+                    <div class="image-container">
+                        <img src="professor4.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>GATE ACADEMY</h2>
+                        <ul class="portfolio-link">
+                            <li><a href="https://youtube.com/playlist?list=PLgzsL8klq6DKZ90WlGyN3UH3Xu11toztr&si=xwOlwTeRglebknXu" target="_blank"><i class="fa-solid fa-link"></i></a></li>
+                            <li><a href="comment.html" target="_blank"><i
+                                        class="fa-solid fa-comments"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>
